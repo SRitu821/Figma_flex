@@ -4,71 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My mortgage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
     <div class="container">
         <div class="login_section">
-
-            <div class="header">
-                <div class="logo" >
-                    <div class="logo_img">
-                        <img src="images/logo.png" alt="Logo">
-                    </div>
-                    <div class="logo-heading">
-                        <p class="logo_headingH1">REGIONS <br /> <span class="logo_headingH2">Mortgage</span></p>
-                    </div>
-                </div>
-                <div class="side_head">
-                    <p class="E-ques">Are you a new customer?</p>
-                    <button class="Enroll_btn">Enroll Now</button>
-                    <div class="EnrollBtn_options">
-                        <a href="#"> <button class="Tick">✔</button>Access your loans online</a>
-                        <a href="#"> Pay your mortgage online</a>
-                        <a href="#"> View your mortgage statements</a>
-                    </div>
-                </div>
+          <div class="header">
+            <div class="logo">
+              <div class="logo_img" id="logoImg">
+                <img src="images/logo.png" class="image" alt="Logo" />
+              </div>
+              <div class="logo-heading" id="logoHeading">
+                <p class="logo_headingH1">
+                  REGIONS <br />
+                  <span class="logo_headingH2">Mortgage</span>
+                </p>
+              </div>
             </div>
-    
-            <div class="welcome_msg">
-                <h1>Welcome Back</h1>
-                <p>Sign in to your Regions MyMortgage account.</p>
+            <div class="side_head" id="sideHead">
+              <p class="E-ques">Are you a new customer?</p>
+              <button class="Enroll_btn">Enroll Now</button>
+              <div class="EnrollBtn_options">
+                <div class="square"></div>
+                <div class="option-box">
+                  <div class="option2">Enroll now to:</div>
+                  <div value="Access" class="options">
+                    <span class="tick"> ✔ </span>Access your loans online
+                  </div>
+                  <div value="Pay" class="options">
+                    <span class="tick"> ✔ </span>Pay your mortgage online
+                  </div>
+                  <div value="View" class="options">
+                    <span class="tick"> ✔ </span>View your mortgage statements
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <form id="loginForm">
-                <div class="input_section">
-                    <label for="onlineID">Online ID</label>
-                    <input type="text" id="online_id"  placeholder="randallb" required>
-                </div>
-                <div class="input_section">
-                    <!-- <label for="password">Password</label> -->
-                    <input type="password" id="password" required>
-                    <span id="togglePassword">Show</span>
-                </div>
-                <div class="rememberMe">
-                    <input type="checkbox" id="rememberMe">
-                    <label for="rememberMe">Remember Me</label>
-                </div>
-                <button type="Submit" class="login_btn">Login</button>
-                <div class="forget">
-                    <a href="#">Forgot Online ID?</a>
-                    <span class="highlight"> • </span>
-                    <a href="#">Forgot Password?</a>
-                </div>
-            </form>
-
-            <footer>
-                <p> <img class="logo2"  src="images/logo2.png">Equal Housing Lender <span class="highlight2"> • </span> Member FDIC  </p>
-                <p><img class="logo3"  src="images/logo3.png">2023 Regions Financial Corporation. All Rights Reserved. <span class="highlight2"> • &nbsp; 1(800) REGIONS</span></p>
-            </footer>
+          </div>
+  
+          <div class="welcome_msg">
+            <h1>Welcome Back</h1>
+            <p>Sign in to your Regions MyMortgage account.</p>
+          </div>
+  
+          <form id="loginForm">
+            <div class="input_section">
+              <div class="onlineId_tag">Online ID</div>
+              <input type="text" id="online_id" placeholder="randallb" required />
+            </div>
+  
+            <div class="input_section1">
+              <div class="password_tag">Password</div>
+              <div class="password-wrapper">
+                <input type="password" id="password_id" required />
+                <span id="togglePassword">Show</span>
+              </div>
+            </div>
+            <div class="rememberMe">
+              <input type="checkbox" id="rememberMe" />
+              <label for="rememberMe">Remember Me</label>
+            </div>
+            <button type="button" class="login_btn" id="loginButton">
+              Login
+            </button>
+            <div class="forget">
+              <a href="#">Forgot Online ID?</a>
+              <span class="highlight"> • </span>
+              <a href="#">Forgot Password?</a>
+            </div>
+          </form>
+  
+          <footer>
+            <p>
+              <img class="logo2" src="images/logo2.png" />Equal Housing Lender
+              <span class="highlight2"> • </span> Member FDIC
+            </p>
+            <p>
+              <img class="logo3" src="images/logo3.png" />2023 Regions Financial
+              Corporation. All Rights Reserved.
+              <span class="highlight2"> • &nbsp; 1(800) REGIONS</span>
+            </p>
+          </footer>
         </div>
-
+  
         <div class="image_section">
-            <img src="images/img4.jpg" alt="Villa image_section">
+          <img
+            src="images/img4.jpg"
+            alt="Villa image_section"
+            id="fullScreenImage"
+          />
         </div>
-    </div>
-
-    <script src="Script.js"></script>
-
+      </div>
+  
+      <script src="Script.js"></script>
 </body>
 </html>
