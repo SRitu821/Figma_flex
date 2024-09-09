@@ -301,7 +301,7 @@ body {
   .image_section {
     flex: 1;
     height: 95vh;
-    /* width: 60vw; */
+    width: 60vw;
   }
   
   .image_section img {
@@ -309,7 +309,7 @@ body {
     height: 98%;
     /* object-fit: cover; */
     border-radius: 15px;
-    margin: 20 20px 20px 0px;
+    margin: 20px 20px 20px 0px;
   }
   
   #logoImg {
