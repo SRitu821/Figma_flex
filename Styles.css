@@ -351,7 +351,6 @@ body {
     left: 2vw;
     width: 96vw;
     height: 96vh;
-    /* margin-left: 1rem; */
     object-fit: cover;
     z-index: 999;
     border-radius: 15px;
